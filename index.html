@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>INNS 과제 레이더</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column of announcement briefs, newest first; facts grid on top of each brief, drafting notes below */
+:root {
+  --bg: #f3f5f7;
+  --surface: #ffffff;
+  --ink: #14212b;
+  --muted: #5b6b78;
+  --line: #d9e0e6;
+  --accent: #0f5c7a;
+  --accent-soft: #e2eef3;
+  --urgent: #b4321f;
+  --urgent-soft: #fbe7e3;
+  --warn: #8a5a00;
+  --warn-soft: #fbf0d6;
+  --ok: #1d6b45;
+  --ok-soft: #e1f2e8;
+  --font-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f161c; --surface: #16212a; --ink: #e4ebf0; --muted: #93a4b1; --line: #2a3a46;
+    --accent: #6cc0e0; --accent-soft: #173342; --urgent: #ff8a75; --urgent-soft: #3a1d18;
+    --warn: #f0c060; --warn-soft: #33290f; --ok: #7fd3a4; --ok-soft: #15301f; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f161c; --surface: #16212a; --ink: #e4ebf0; --muted: #93a4b1; --line: #2a3a46;
+  --accent: #6cc0e0; --accent-soft: #173342; --urgent: #ff8a75; --urgent-soft: #3a1d18;
+  --warn: #f0c060; --warn-soft: #33290f; --ok: #7fd3a4; --ok-soft: #15301f; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 15px; line-height: 1.6; }
+.wrap { max-width: 860px; margin: 0 auto; padding-block: 32px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 24px; }
+header { display: grid; gap: 8px; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+h1 { margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -.01em; text-wrap: balance; }
+.profile { margin: 0; color: var(--muted); max-width: 65ch; }
+.runbar { display: flex; flex-wrap: wrap; gap: 8px 20px; padding: 12px 0; border-block: 1px solid var(--line); font-size: 13px; color: var(--muted); }
+.runbar b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
+.runnote { margin: 0; font-size: 14px; color: var(--ink); }
+.list { display: grid; gap: 16px; }
+.brief { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: grid; gap: 14px; min-width: 0; }
+.brief-top { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.pill { font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+.pill.new { background: var(--ink); color: var(--surface); }
+.pill.fit-high { background: var(--ok-soft); color: var(--ok); }
+.pill.fit-mid { background: var(--warn-soft); color: var(--warn); }
+.pill.fit-low { background: var(--bg); color: var(--muted); border: 1px solid var(--line); }
+.org { font-size: 13px; color: var(--muted); margin-left: auto; }
+h2 { margin: 0; font-size: 18px; font-weight: 600; line-height: 1.45; text-wrap: balance; }
+h2 a { color: inherit; text-decoration: none; }
+h2 a:hover, h2 a:focus-visible { color: var(--accent); text-decoration: underline; }
+.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px 16px; margin: 0; padding: 12px 14px; background: var(--bg); border-radius: 8px; }
+.facts div { min-width: 0; }
+.facts dt { font-size: 11.5px; letter-spacing: .04em; color: var(--muted); }
+.facts dd { margin: 0; font-family: var(--font-mono); font-size: 13.5px; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.facts dd.text { font-family: var(--font-body); }
+.dday { display: inline-block; margin-left: 6px; font-size: 12px; font-weight: 500; padding: 0 6px; border-radius: 4px; background: var(--accent-soft); color: var(--accent); }
+.dday.soon { background: var(--urgent-soft); color: var(--urgent); }
+.dday.past { background: var(--line); color: var(--muted); }
+.sec h3 { margin: 0 0 4px; font-size: 13px; font-weight: 600; color: var(--accent); }
+.sec p { margin: 0; max-width: 70ch; }
+.sec ol { margin: 0; padding-left: 20px; display: grid; gap: 4px; max-width: 70ch; }
+.empty { background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; padding: 28px 20px; color: var(--muted); }
+.empty strong { color: var(--ink); }
+footer { font-size: 12.5px; color: var(--muted); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 480px) { h1 { font-size: 23px; } .org { margin-left: 0; width: 100%; } }
+</style>
+<style>body{margin:0}[hidden]{display:none!important}</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="eyebrow">IRIS · NTIS 매일 아침 브리핑</div>
+    <h1>INNS 과제 레이더</h1>
+    <p class="profile">건국대학교 지능형네트워크및보안연구실(INNS, 김기천 교수)에 맞는 국가 R&amp;D 공고를 골라, 일정과 계획서 접근 방향을 초안으로 정리합니다. 연구 키워드: IoT 네트워크 성능·보안, IPv6, SDN, CDN, 네트워크 보안, 경량 암호, 사용자 인증.</p>
+  </header>
+
+  <div class="runbar" id="runbar">
+    <span>마지막 확인 <b id="lastRun">불러오는 중</b></span>
+    <span>이번 확인 신규 <b id="newCount">–</b>건</span>
+    <span>표시 <b id="shownCount">–</b> / 최근 10건</span>
+  </div>
+  <p class="runnote" id="runNote" hidden></p>
+
+  <div class="list" id="list">
+    <div class="empty" id="empty"><strong>아직 저장된 공고가 없습니다.</strong><br>매일 아침 자동 확인이 끝나면 연구실에 맞는 공고가 최신순으로 여기에 쌓입니다. 이미 분석한 공고는 다시 분석하지 않고 그대로 유지됩니다.</div>
+  </div>
+
+  <footer>D-day는 오늘(한국 시간) 기준입니다. 적합도와 접근 방향은 자동 작성된 초안이므로, 신청 전 공고문 원문과 과제제안요청서(RFP)를 꼭 확인하세요.</footer>
+</div>
+
+<script>
+(function () {
+  var listEl = document.getElementById("list");
+  var emptyEl = document.getElementById("empty");
+
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function todayKST() {
+    var d = new Date(Date.now() + 9 * 3600 * 1000);
+    return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate());
+  }
+  function parseDay(s) {
+    var m = /^(\d{4})[-.](\d{1,2})[-.](\d{1,2})/.exec(s || "");
+    return m ? Date.UTC(+m[1], +m[2] - 1, +m[3]) : null;
+  }
+  function fitClass(f) {
+    if (f === "높음") return "fit-high";
+    if (f === "중간") return "fit-mid";
+    return "fit-low";
+  }
+  function fact(label, value, isText) {
+    var d = el("div");
+    d.appendChild(el("dt", null, label));
+    var dd = el("dd", isText ? "text" : null, value || "–");
+    d.appendChild(dd);
+    return { node: d, dd: dd };
+  }
+
+  function render(docs, lastRunDate) {
+    listEl.textContent = "";
+    document.getElementById("shownCount").textContent = docs.length;
+    if (!docs.length) { listEl.appendChild(emptyEl); return; }
+    var today = todayKST();
+    docs.forEach(function (x) {
+      var card = el("article", "brief");
+      var top = el("div", "brief-top");
+      if (lastRunDate && x.firstSeen === lastRunDate) top.appendChild(el("span", "pill new", "신규"));
+      if (x.status) top.appendChild(el("span", "pill", x.status));
+      if (x.fit) top.appendChild(el("span", "pill " + fitClass(x.fit), "적합도 " + x.fit));
+      top.appendChild(el("span", "org", [x.source, x.ministry, x.agency].filter(Boolean).join(" · ")));
+      card.appendChild(top);
+
+      var h = el("h2");
+      if (x.url) { var a = el("a", null, x.title); a.href = x.url; a.target = "_blank"; a.rel = "noopener"; h.appendChild(a); }
+      else h.textContent = x.title;
+      card.appendChild(h);
+
+      var facts = el("dl", "facts");
+      facts.appendChild(fact("공고일", x.ancmDate).node);
+      if (x.plannedDate) facts.appendChild(fact("공고예정일", x.plannedDate).node);
+      facts.appendChild(fact("접수 시작", x.rcveStart).node);
+      var dl = fact("마감일", x.deadline);
+      var dd = parseDay(x.deadline);
+      if (dd != null) {
+        var n = Math.round((dd - today) / 86400000);
+        var tag = el("span", "dday" + (n < 0 ? " past" : n <= 7 ? " soon" : ""), n < 0 ? "마감" : n === 0 ? "D-Day" : "D-" + n);
+        dl.dd.appendChild(tag);
+      }
+      facts.appendChild(dl.node);
+      facts.appendChild(fact("지역", x.region || "제한 없음", true).node);
+      facts.appendChild(fact("해외", x.overseas || "해당 없음", true).node);
+      if (x.budget) facts.appendChild(fact("규모", x.budget, true).node);
+      card.appendChild(facts);
+
+      if (x.fitReason) {
+        var s1 = el("div", "sec");
+        s1.appendChild(el("h3", null, "연구실과 맞는 이유"));
+        s1.appendChild(el("p", null, x.fitReason));
+        card.appendChild(s1);
+      }
+      var steps = Array.isArray(x.approach) ? x.approach : (x.approach ? [x.approach] : []);
+      if (steps.length) {
+        var s2 = el("div", "sec");
+        s2.appendChild(el("h3", null, "계획서 접근 방향 (초안)"));
+        var ol = el("ol");
+        steps.forEach(function (t) { ol.appendChild(el("li", null, t)); });
+        s2.appendChild(ol);
+        card.appendChild(s2);
+      }
+      if (x.caution) {
+        var s3 = el("div", "sec");
+        s3.appendChild(el("h3", null, "확인할 점"));
+        s3.appendChild(el("p", null, x.caution));
+        card.appendChild(s3);
+      }
+      listEl.appendChild(card);
+    });
+  }
+
+  var latestDocs = [];
+  var lastRunDate = null;
+
+  fetch("data.json", { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (d) {
+      var m = d.meta || {};
+      document.getElementById("lastRun").textContent = m.lastRun || "아직 없음";
+      document.getElementById("newCount").textContent = m.newCount != null ? m.newCount : "–";
+      var note = document.getElementById("runNote");
+      if (m.note) { note.textContent = m.note; note.hidden = false; }
+      lastRunDate = m.lastRun || null;
+      latestDocs = (d.notices || []).slice().sort(function (a, b) { return a.addedAt < b.addedAt ? 1 : -1; }).slice(0, 10);
+      render(latestDocs, lastRunDate);
+    })
+    .catch(function () { document.getElementById("lastRun").textContent = "불러오기 실패"; });
+})();
+</script>
+</body>
+</html>
