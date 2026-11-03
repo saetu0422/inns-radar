@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastRun": "2026-11-02",
+    "lastRun": "2026-11-03",
     "newCount": 0,
-    "checked": "IRIS 접수중 15건 · 접수예정(시험 항목 제외) · 공모예고 일부 · NTIS 건너뜀",
-    "note": "새 공고 없음. 신규 후보 4건(범부처 시스템 운영, 팁스, 딥테크 챌린지, 소부장 양산성능평가)은 기업·인프라 중심이라 제외. 7일 안 마감 공고 없음(가장 빠른 마감 11-13)."
+    "checked": "IRIS 접수중 14건 · 접수예정(시험 항목 제외) · NTIS 건너뜀 · 공모예고 미확인",
+    "note": "새 공고 없음. 신규 후보 1건(AX실증밸리조성 R&D: 자율주행 모빌리티·에너지 AI 중심)은 연구실 분야와 달라 제외. AI 주파수 간섭분석 공고는 오늘부터 접수중. 7일 안 마감되는 공고 없음(가장 빠른 마감 11-13)."
   },
   "notices": [
     {
@@ -23,14 +23,14 @@
       "firstSeen": "2026-10-30",
       "fit": "중간",
       "fitReason": "IITP 차세대통신 분야로, AI·빅데이터 기반 전파환경 분석과 통신채널 예측 모델을 다룹니다. RFP는 '수중 통신채널 환경 분석 및 예측 모델 개발'로, 네트워크 성능 분석·IoT 통신 경험을 살릴 수 있지만 전파(물리계층) 비중이 큽니다.",
-      "lastChecked": "2026-10-30",
+      "lastChecked": "2026-11-03",
       "ministry": "과학기술정보통신부",
       "overseas": "",
       "plannedDate": "",
       "rcveStart": "2026-11-03",
       "region": "",
       "source": "IRIS",
-      "status": "접수예정",
+      "status": "접수중",
       "title": "2026년도 AI 기반 주파수 간섭분석 및 전파예측기술 개발사업 신규지원 대상과제 공고",
       "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024439&ancmPrg=ancmPre"
     },
