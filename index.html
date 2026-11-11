@@ -42,6 +42,10 @@ header { display: grid; gap: 8px; }
 h1 { margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -.01em; text-wrap: balance; }
 h1 a { color: inherit; text-decoration: none; }
 .profile { margin: 0; color: var(--muted); max-width: 70ch; }
+.nav { display: flex; gap: 8px; flex-wrap: wrap; }
+.nav a { padding: 6px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); text-decoration: none; font-size: 14px; }
+.nav a[aria-current="page"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.nav a:hover, .nav a:focus-visible { border-color: var(--accent); }
 .runbar { display: flex; flex-wrap: wrap; gap: 8px 20px; padding: 12px 0; border-block: 1px solid var(--line); font-size: 13px; color: var(--muted); }
 .runbar b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
 .runnote { margin: 0; font-size: 14px; }
@@ -103,6 +107,7 @@ footer { font-size: 12.5px; color: var(--muted); }
     <div class="eyebrow">IRIS · NTIS 매일 아침 브리핑</div>
     <h1><a href="#">INNS 과제 레이더</a></h1>
     <p class="profile">건국대학교 지능형네트워크및보안연구실(INNS, 김기천 교수)에 맞는 국가 R&amp;D 공고를 골라, 일정과 계획서 접근 방향을 초안으로 정리합니다. 연구 키워드: IoT 네트워크 성능·보안, IPv6, SDN, CDN, 네트워크 보안, 경량 암호, 사용자 인증.</p>
+    <nav class="nav"><a href="./" aria-current="page">연구실 맞춤 리포트</a><a href="all.html">전체 공고</a></nav>
   </header>
 
   <div class="runbar">
