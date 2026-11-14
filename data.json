@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastRun": "2026-11-13",
+    "lastRun": "2026-11-14",
     "newCount": 0,
-    "checked": "IRIS 접수중 14건 · 접수예정(시험 항목 제외) · 공모예고·NTIS 건너뜀",
-    "note": "새 공고 없음. 기존 리포트 공고 상태·마감 변동 없음. 오늘 마감: 한계돌파 R&D DETECT&RESCUE·한-중 신진과학자교류(11-13). 7일 안 마감: IITP AI 주파수 간섭분석·AX실증밸리 3-2(11-16 15:00), NSF IRES(11-17)."
+    "checked": "IRIS 접수중 11건 · 접수예정(시험 항목 제외) · 공모예고·NTIS 건너뜀",
+    "note": "새 공고 없음. 한계돌파 R&D DETECT&RESCUE·한-중 신진과학자교류는 11-13 마감. 7일 안 마감: IITP AI 주파수 간섭분석·AX실증밸리 3-2(11-16 월 15:00), NSF IRES(11-17)."
   },
   "notices": [
     {
@@ -81,14 +81,14 @@
       "firstSeen": "2026-10-30",
       "fit": "중간",
       "fitReason": "트랙②는 GPS·WiFi 인프라가 끊긴 건물 내부 요구조자의 3D 위치를 층수 + 반경 5m로 외부에서 찾는 기술입니다. 인프라 없는 무선 측위, IoT 애드혹 네트워크, 신뢰성 있는 위치 정보 전달이 핵심이라 네트워크 연구실이 접근할 수 있습니다.",
-      "lastChecked": "2026-10-30",
+      "lastChecked": "2026-11-14",
       "ministry": "과학기술정보통신부",
       "overseas": "",
       "plannedDate": "",
       "rcveStart": "2026-10-26",
       "region": "",
       "source": "IRIS",
-      "status": "접수중",
+      "status": "마감",
       "title": "2026년도 미래개척융합과학기술개발사업(한계돌파 R&D) 신규과제 공모 — ICT융합 DETECT&RESCUE 트랙②",
       "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024037&ancmPrg=ancmIng"
     },
@@ -108,14 +108,14 @@
       "firstSeen": "2026-10-30",
       "fit": "검토",
       "fitReason": "분야 제한이 없는 인력교류 사업이라 연구실 박사과정생·신진 연구자가 중국 네트워크·보안 연구실에 파견될 수 있습니다. 연구과제 수주보다는 인력 교류 성격입니다.",
-      "lastChecked": "2026-10-30",
+      "lastChecked": "2026-11-14",
       "ministry": "과학기술정보통신부",
       "overseas": "중국 (CSTEC, 중국 기관 파견)",
       "plannedDate": "",
       "rcveStart": "2026-10-12",
       "region": "",
       "source": "IRIS",
-      "status": "접수중",
+      "status": "마감",
       "title": "2026년도 한-중(CSTEC) 신진과학자교류사업(파견) 신규과제 공모",
       "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024437&ancmPrg=ancmIng"
     },

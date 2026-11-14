@@ -1,32 +1,6 @@
 {
-  "checkedOn": "2026-11-13",
+  "checkedOn": "2026-11-14",
   "items": [
-    {
-      "ancmId": "024037",
-      "title": "2026년도 미래개척융합과학기술개발사업(한계돌파 R&D) 신규과제 공모(수정)",
-      "ministry": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "status": "접수중",
-      "type": "분야공모",
-      "ancmDate": "2026-10-13",
-      "rcveStart": "2026-10-26",
-      "deadline": "2026-11-13",
-      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024037&ancmPrg=ancmIng",
-      "related": true
-    },
-    {
-      "ancmId": "024437",
-      "title": "2026년도 한-중(CSTEC) 신진과학자교류사업(파견) 신규과제 공모",
-      "ministry": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "status": "접수중",
-      "type": "자유공모",
-      "ancmDate": "2026-10-12",
-      "rcveStart": "2026-10-12",
-      "deadline": "2026-11-13",
-      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024437&ancmPrg=ancmIng",
-      "related": true
-    },
     {
       "ancmId": "024717",
       "title": "2026년 「AX실증밸리조성(R&D)」 사업 신규지원대상 과제 통합 재공고",
@@ -65,32 +39,6 @@
       "deadline": "2026-11-17",
       "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024477&ancmPrg=ancmIng",
       "related": true
-    },
-    {
-      "ancmId": "024778",
-      "title": "범부처 신속대응 R&D KOFPI 전담 지정 과제",
-      "ministry": "과학기술정보통신부",
-      "agency": "한국임업진흥원",
-      "status": "접수중",
-      "type": "자유공모",
-      "ancmDate": "2026-11-01",
-      "rcveStart": "2026-11-09",
-      "deadline": "2026-11-13",
-      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024778&ancmPrg=ancmIng",
-      "related": false
-    },
-    {
-      "ancmId": "024438",
-      "title": "2026년 지역거점 AX 혁신 기술개발 사업 신규지원 대상과제 공고(공정·응용 솔루션 AX R&D, 응용 제품 AX R&D)_KHIDI",
-      "ministry": "다부처",
-      "agency": "정보통신산업진흥원",
-      "status": "접수중",
-      "type": "지정공모",
-      "ancmDate": "2026-10-14",
-      "rcveStart": "2026-10-30",
-      "deadline": "2026-11-13",
-      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024438&ancmPrg=ancmIng",
-      "related": false
     },
     {
       "ancmId": "017678",
@@ -149,12 +97,12 @@
       "title": "2026년도 제5차 과학기술분야 연구기획과제 공모",
       "ministry": "과학기술정보통신부",
       "agency": "한국연구재단",
-      "status": "접수예정",
+      "status": "접수중",
       "type": "지정공모",
       "ancmDate": "2026-11-13",
       "rcveStart": "2026-11-13",
       "deadline": "2026-11-26",
-      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024799&ancmPrg=ancmPre",
+      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024799&ancmPrg=ancmIng",
       "related": false
     },
     {
