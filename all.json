@@ -1,5 +1,5 @@
 {
-  "checkedOn": "2026-11-14",
+  "checkedOn": "2026-11-15",
   "items": [
     {
       "ancmId": "024717",
@@ -136,12 +136,12 @@
       "title": "공고 테스트",
       "ministry": "과학기술정보통신부",
       "agency": "재단법인 국가신약개발재단",
-      "status": "접수예정",
+      "status": "접수중",
       "type": "자유공모",
       "ancmDate": "2026-11-01",
       "rcveStart": "2026-11-15",
       "deadline": "2026-11-30",
-      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=023737&ancmPrg=ancmPre",
+      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=023737&ancmPrg=ancmIng",
       "related": false
     },
     {
