@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastRun": "2026-11-16",
+    "lastRun": "2026-11-17",
     "newCount": 0,
-    "checked": "IRIS 접수중 12건 · 접수예정(시험 항목 제외) · 공모예고·NTIS 건너뜀",
-    "note": "새 공고 없음. 오늘(11-16) 15:00 마감: IITP AI 주파수 간섭분석·AX실증밸리 3-2. 내일(11-17) 마감: NSF IRES."
+    "checked": "IRIS 접수중 10건 · 접수예정(시험 항목 제외) · 공모예고·NTIS 건너뜀",
+    "note": "새 공고 없음. IITP AI 주파수 간섭분석·AX실증밸리 3-2는 11-16 마감. 오늘(11-17) 마감: NSF IRES. 리포트에 접수 중인 다른 공고는 없음."
   },
   "notices": [
     {
@@ -24,14 +24,14 @@
       "firstSeen": "2026-11-11",
       "fit": "중간",
       "fitReason": "재공고 4개 과제 중 (3-2) 분산에너지 데이터 전처리·표준화 과제는 데이터 비식별화·암호화, API 기반 접근 권한·유통 관리, 데이터 공유 플랫폼 보안을 개발 내용에 포함해 연구실의 경량 암호·인증·IoT 보안 역량과 겹칩니다. 주관기관 제한이 없어 대학도 신청할 수 있습니다. 다만 중심은 에너지 데이터 표준(4건 이상)과 데이터셋·플랫폼 구축이라 단독 주관보다 보안 담당 공동기관이 현실적입니다. 나머지 3개(SDV 차량제어: 중소·중견기업 주관, 배전망 SOP·동특성: 전력계통·한전 필수)는 맞지 않습니다.",
-      "lastChecked": "2026-11-11",
+      "lastChecked": "2026-11-17",
       "ministry": "산업통상부·기후에너지환경부",
       "overseas": "",
       "plannedDate": "",
       "rcveStart": "2026-11-03",
       "region": "전남광주통합특별시 실증 필수(주관기관 소재 제한은 없음)",
       "source": "IRIS",
-      "status": "접수중",
+      "status": "마감",
       "title": "2026년 「AX실증밸리조성(R&D)」 사업 신규지원대상 과제 통합 재공고 — (3-2) 분산에너지 데이터 표준화·전처리 기술개발",
       "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024717&ancmPrg=ancmIng"
     },
@@ -52,14 +52,14 @@
       "firstSeen": "2026-10-30",
       "fit": "중간",
       "fitReason": "IITP 차세대통신 분야로, AI·빅데이터 기반 전파환경 분석과 통신채널 예측 모델을 다룹니다. RFP는 '수중 통신채널 환경 분석 및 예측 모델 개발'로, 네트워크 성능 분석·IoT 통신 경험을 살릴 수 있지만 전파(물리계층) 비중이 큽니다.",
-      "lastChecked": "2026-11-03",
+      "lastChecked": "2026-11-17",
       "ministry": "과학기술정보통신부",
       "overseas": "",
       "plannedDate": "",
       "rcveStart": "2026-11-03",
       "region": "",
       "source": "IRIS",
-      "status": "접수중",
+      "status": "마감",
       "title": "2026년도 AI 기반 주파수 간섭분석 및 전파예측기술 개발사업 신규지원 대상과제 공고",
       "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024439&ancmPrg=ancmPre"
     },
