@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastRun": "2026-11-17",
+    "lastRun": "2026-11-18",
     "newCount": 0,
-    "checked": "IRIS 접수중 10건 · 접수예정(시험 항목 제외) · 공모예고·NTIS 건너뜀",
-    "note": "새 공고 없음. IITP AI 주파수 간섭분석·AX실증밸리 3-2는 11-16 마감. 오늘(11-17) 마감: NSF IRES. 리포트에 접수 중인 다른 공고는 없음."
+    "checked": "IRIS 접수중 7건 · 접수예정(시험 항목 제외) · 공모예고·NTIS 건너뜀",
+    "note": "새 공고 없음. NSF IRES는 11-17 마감. 리포트 공고 5건 모두 마감되어 현재 접수 중인 관련 공고 없음."
   },
   "notices": [
     {
@@ -135,14 +135,14 @@
       "firstSeen": "2026-10-30",
       "fit": "검토",
       "fitReason": "미국 NSF IRES에 선정된 미국 대학 파트너 교수가 있는 한국 교수만 신청할 수 있습니다. 해당 파트너가 있다면 학생 연수 운영비를 받을 수 있습니다.",
-      "lastChecked": "2026-10-30",
+      "lastChecked": "2026-11-18",
       "ministry": "과학기술정보통신부",
       "overseas": "미국 (NSF IRES 선정 대학 파트너)",
       "plannedDate": "",
       "rcveStart": "2026-10-16",
       "region": "",
       "source": "IRIS",
-      "status": "접수중",
+      "status": "마감",
       "title": "2026년 한미 이공분야 학생인력교류 프로그램(NSF IRES) 운영지원사업 신규과제 공모",
       "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024477&ancmPrg=ancmIng"
     }

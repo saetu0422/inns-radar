@@ -1,32 +1,6 @@
 {
-  "checkedOn": "2026-11-17",
+  "checkedOn": "2026-11-18",
   "items": [
-    {
-      "ancmId": "024477",
-      "title": "2026년 한미 이공분야 학생인력교류 프로그램(NSF IRES) 운영지원사업 신규과제 공모",
-      "ministry": "과학기술정보통신부",
-      "agency": "한국연구재단",
-      "status": "접수중",
-      "type": "자유공모",
-      "ancmDate": "2026-10-16",
-      "rcveStart": "2026-10-16",
-      "deadline": "2026-11-17",
-      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024477&ancmPrg=ancmIng",
-      "related": true
-    },
-    {
-      "ancmId": "017678",
-      "title": "2026년도 딥테크 챌린지 프로젝트(DCP)생태계혁신형 시행계획 공고",
-      "ministry": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "status": "접수중",
-      "type": "지정공모",
-      "ancmDate": "2026-01-08",
-      "rcveStart": "2026-11-11",
-      "deadline": "2026-11-17",
-      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=017678&ancmPrg=ancmIng",
-      "related": false
-    },
     {
       "ancmId": "024578",
       "title": "2026년도 제3차 기계장비산업기술개발사업 신규지원 대상과제 공고",
@@ -110,12 +84,12 @@
       "title": "공고 테스트",
       "ministry": "과학기술정보통신부",
       "agency": "재단법인 국가신약개발재단",
-      "status": "접수중",
+      "status": "접수예정",
       "type": "자유공모",
       "ancmDate": "2026-11-01",
-      "rcveStart": "2026-11-15",
-      "deadline": "2026-11-30",
-      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=023737&ancmPrg=ancmIng",
+      "rcveStart": "2027-01-01",
+      "deadline": "2027-01-06",
+      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=023737&ancmPrg=ancmPre",
       "related": false
     },
     {
