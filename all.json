@@ -1,6 +1,19 @@
 {
-  "checkedOn": "2026-11-19",
+  "checkedOn": "2026-11-20",
   "items": [
+    {
+      "ancmId": "024757",
+      "title": "2027년도 1차 개인기초연구(핵심연구(한우물파기 기초연구)) 신규과제 공모",
+      "ministry": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "status": "접수예정",
+      "type": "자유공모",
+      "ancmDate": "2026-11-05",
+      "rcveStart": "2026-11-25",
+      "deadline": "2026-12-10",
+      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024757&ancmPrg=ancmPre",
+      "related": true
+    },
     {
       "ancmId": "024578",
       "title": "2026년도 제3차 기계장비산업기술개발사업 신규지원 대상과제 공고",
