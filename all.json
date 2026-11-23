@@ -1,5 +1,5 @@
 {
-  "checkedOn": "2026-11-22",
+  "checkedOn": "2026-11-23",
   "items": [
     {
       "ancmId": "024760",
@@ -103,6 +103,19 @@
       "rcveStart": "2026-11-25",
       "deadline": "2026-12-10",
       "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024762&ancmPrg=ancmPre",
+      "related": false
+    },
+    {
+      "ancmId": "024742",
+      "title": "2027년도 1차 개인기초연구(신진연구(유형B)) 신규과제 공모",
+      "ministry": "과학기술정보통신부",
+      "agency": "한국연구재단",
+      "status": "접수예정",
+      "type": "자유공모",
+      "ancmDate": "2026-11-05",
+      "rcveStart": "2026-11-25",
+      "deadline": "2026-12-10",
+      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024742&ancmPrg=ancmPre",
       "related": false
     },
     {
