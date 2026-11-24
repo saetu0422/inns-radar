@@ -1,5 +1,5 @@
 {
-  "checkedOn": "2026-11-23",
+  "checkedOn": "2026-11-24",
   "items": [
     {
       "ancmId": "024760",
@@ -39,19 +39,6 @@
       "deadline": "2026-12-10",
       "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=024757&ancmPrg=ancmPre",
       "related": true
-    },
-    {
-      "ancmId": "019508",
-      "title": "2026년도 투·융자 연계 기술개발사업 지원계획 수정 공고(딥테크 챌린지 프로젝트_기술도전형)",
-      "ministry": "중소벤처기업부",
-      "agency": "중소기업기술정보진흥원",
-      "status": "접수중",
-      "type": "지정공모",
-      "ancmDate": "2026-02-27",
-      "rcveStart": "2026-09-23",
-      "deadline": "2026-11-23",
-      "url": "https://www.iris.go.kr/contents/retrieveBsnsAncmView.do?ancmId=019508&ancmPrg=ancmIng",
-      "related": false
     },
     {
       "ancmId": "024799",
